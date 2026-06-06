@@ -1,0 +1,133 @@
+{
+  "Alice": {
+    "Math": 65,
+    "Music": 64,
+    "Science": 58
+  },
+  "Bob": {
+    "History": 52,
+    "Art": 51,
+    "Literature": 55
+  },
+  "Charlie": {
+    "Literature": 85,
+    "Art": 62,
+    "Physical Education": 95,
+    "Math": 91
+  },
+  "David": {
+    "Literature": 94,
+    "Computer Science": 77,
+    "Art": 71,
+    "Science": 67,
+    "Math": 59,
+    "Physical Education": 63
+  },
+  "Eve": {
+    "History": 72,
+    "Math": 88,
+    "Literature": 66,
+    "Physical Education": 52,
+    "Science": 96
+  },
+  "Frank": {
+    "History": 89,
+    "Literature": 73,
+    "Math": 86,
+    "Art": 62,
+    "Science": 95,
+    "Physical Education": 54
+  },
+  "Grace": {
+    "Literature": 55,
+    "Physical Education": 64,
+    "Science": 56
+  },
+  "Heidi": {
+    "Art": 72,
+    "Literature": 63,
+    "Music": 92,
+    "Science": 67,
+    "History": 94,
+    "Physical Education": 93
+  },
+  "Ivan": {
+    "Science": 65,
+    "Art": 60,
+    "Music": 79
+  },
+  "Judy": {
+    "Art": 70,
+    "Music": 99,
+    "Physical Education": 99,
+    "Computer Science": 53,
+    "History": 64,
+    "Science": 52
+  },
+  "Karl": {
+    "Physical Education": 63,
+    "Science": 91,
+    "Math": 81,
+    "History": 75,
+    "Computer Science": 91
+  },
+  "Linda": {
+    "Science": 87,
+    "Computer Science": 77,
+    "History": 87,
+    "Music": 75,
+    "Physical Education": 73,
+    "Literature": 64
+  },
+  "Mike": {
+    "Computer Science": 59,
+    "Math": 90,
+    "Physical Education": 60,
+    "Music": 100
+  },
+  "Nancy": {
+    "History": 66,
+    "Literature": 85,
+    "Physical Education": 50,
+    "Art": 93,
+    "Music": 96,
+    "Science": 57
+  },
+  "Oscar": {
+    "Music": 79,
+    "Math": 50,
+    "Science": 96,
+    "Literature": 96,
+    "History": 66
+  },
+  "Peggy": {
+    "History": 90,
+    "Physical Education": 82,
+    "Music": 88,
+    "Science": 62
+  },
+  "Quinn": {
+    "Music": 99,
+    "Physical Education": 83,
+    "History": 50,
+    "Art": 88
+  },
+  "Rose": {
+    "Computer Science": 65,
+    "Math": 53,
+    "Physical Education": 65,
+    "Science": 86,
+    "Art": 55
+  },
+  "Steve": {
+    "Computer Science": 98,
+    "Physical Education": 84,
+    "Math": 99
+  },
+  "Trent": {
+    "Science": 60,
+    "Music": 66,
+    "Literature": 83,
+    "Art": 88
+  }
+}
