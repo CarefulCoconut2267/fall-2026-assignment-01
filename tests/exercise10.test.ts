@@ -19,11 +19,14 @@ describe('Exercise 10: UserRegistry', () => {
     expect(registered.passwordHash).toBe('SECRET');
 
     const view = registry.getUserView(registered.id);
-    expect(view.id).toBe(registered.id);
-    expect(view.email).toBe(newUser.email);
-    expect(view.profile).toEqual(newUser.profile);
+    expect(view?.id).toBe(registered.id);
+    expect(view?.email).toBe(newUser.email);
+    expect(view?.profile).toEqual(newUser.profile);
 
     // Check that passwordHash is omitted from the view
     expect((view as any).passwordHash).toBeUndefined();
+
+    // Verify immutability (strictly read-only)
+    expect(Object.isFrozen(view)).toBe(true);
   });
 });

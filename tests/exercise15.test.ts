@@ -24,7 +24,27 @@ describe('Exercise 15: processCommentsPipeline', () => {
     expect(data[0]).toHaveProperty('commenterEmail');
     expect(data[0]).not.toHaveProperty('body'); // Should be Omit/Pick if type CommentSummary is strictly followed
 
-    // Verify no .org emails (though none existed for post 1, we can assert the filter logic works)
+    // Verify no .org emails (none existed for post 1, but this ensures filter logic works)
+    data.forEach((comment: any) => {
+      expect(comment.commenterEmail.endsWith('.org')).toBe(false);
+    });
+  });
+
+  it('should correctly filter out .org emails for post 2', async () => {
+    const post2Path = path.join('data', 'comments_post2_output.json');
+    try {
+      await fs.unlink(post2Path);
+    } catch (e) {}
+
+    const count = await processCommentsPipeline(2, post2Path);
+
+    // Based on discovery: postId 2 has 5 total comments, 1 ends in .org
+    expect(count).toBe(4);
+
+    const fileContent = await fs.readFile(post2Path, 'utf-8');
+    const data = JSON.parse(fileContent);
+
+    expect(data).toHaveLength(4);
     data.forEach((comment: any) => {
       expect(comment.commenterEmail.endsWith('.org')).toBe(false);
     });

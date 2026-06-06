@@ -3,4 +3,7 @@ node_modules/
 dist/
 *.log
 temp/
-data/logs.txt
+
+# Ignore everything in data/ but keep gradebook.json
+data/*
+!data/gradebook.json

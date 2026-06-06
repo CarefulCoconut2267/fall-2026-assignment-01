@@ -9,7 +9,7 @@ export class UserRegistry {
 
   public getUserView(
     id: string,
-  ): Readonly<Pick<UserAccount, 'id' | 'email' | 'profile'>> {
-    return {};
+  ): Readonly<Pick<UserAccount, 'id' | 'email' | 'profile'>> | undefined {
+    return undefined;
   }
 }
