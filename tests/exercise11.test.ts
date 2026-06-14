@@ -10,7 +10,7 @@ describe('Exercise 11: logStatusToFile', () => {
     // 1. Clean start
     try {
       await fs.unlink(testFilePath);
-    } catch (e) {
+    } catch {
       // Ignore if file doesn't exist
     }
 

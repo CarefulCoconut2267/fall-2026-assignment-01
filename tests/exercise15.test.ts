@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { describe, it, expect } from 'vitest';
 import { processCommentsPipeline } from '../src/exercise15.js';
 import fs from 'fs/promises';
@@ -10,7 +11,9 @@ describe('Exercise 15: processCommentsPipeline', () => {
     // Clean up
     try {
       await fs.unlink(outputPath);
-    } catch (e) {}
+    } catch {
+      // ignore
+    }
 
     const count = await processCommentsPipeline(1, outputPath);
 
@@ -34,7 +37,9 @@ describe('Exercise 15: processCommentsPipeline', () => {
     const post2Path = path.join('data', 'comments_post2_output.json');
     try {
       await fs.unlink(post2Path);
-    } catch (e) {}
+    } catch {
+      // ignore
+    }
 
     const count = await processCommentsPipeline(2, post2Path);
 
